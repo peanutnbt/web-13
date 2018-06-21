@@ -15,7 +15,7 @@ function generate(testLengthArray){
     };
     abc.target=(()=>{
           let target; 
-          if(item > 3){
+          if(testLengthArray.length > 3){
             if( index== 0){target =  abc.input[0];}
             else if(index == 69){target = abc.input[testLengthArray[69]-1];}
             else{target = Math.floor(Math.random() * 100);}
