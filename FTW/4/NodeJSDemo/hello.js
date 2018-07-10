@@ -71,14 +71,14 @@
 
 
 
-// const fileModule=require("./fileModule");
-// fileModule.writeFileCustom("testModule.json",{a:"abcxyz",b:"tan"});
-// // let fileData=fileModule.readFileCustom("testModule.json");
-// // console.log(fileData);   se undefined
+const fileModule=require("./fileModule");
+fileModule.writeFileCustom("testModule.json",{a:"abcxyz",b:"tan"});
+// let fileData=fileModule.readFileCustom("testModule.json");
+// console.log(fileData);   se undefined
 
-// fileModule.readFileCustom("testModule.json",(fileData)=>{
-//     console.log(fileData); 
-// });
+fileModule.readFileCustom("testModule.json",(fileData)=>{
+    console.log(fileData); 
+});
 
 
 

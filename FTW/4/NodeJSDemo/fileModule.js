@@ -10,7 +10,7 @@ const writeFileCustom=(filePath,writeData)=>{
 //     fs.readFile(filePath,(err,data)=>{
 //         if(err) console.log(err)
 //         else return data;
-//     })
+//     }) 
 
 // }
 const readFileCustom=(filePath,onReadFileDone)=>{
