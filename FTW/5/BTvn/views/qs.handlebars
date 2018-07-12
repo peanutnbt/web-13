@@ -1,5 +1,8 @@
 <div class="qs mt-3">
     <h2 class="mb-3">Hãy hỏi cộng đồng một câu hỏi đúng/sai hoặc có/không</h2>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    <div class="btn btn-primary">Gửi</div>
+    <form action="/question/add" method="POST">
+        <textarea name="questionContent" id="text-area-qs" cols="30" rows="10" maxlength="200"></textarea>
+        <h6>Còn <span id="count-down-letter">200</span>/200 ký tự</h6>
+        <button class="btn btn-primary" type="submit">Gửi</button>
+    </form>
 </div>
