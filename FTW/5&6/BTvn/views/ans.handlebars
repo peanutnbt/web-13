@@ -1,7 +1,7 @@
 <div class="ans mt-3 mb-3 pt-3">
     <h2 class="mb-3 mt-3 " id="qsBlock">{{qs.content}}</h2>
-    <a class="btn btn-danger mt-3" href="/answer/{{question.id}}/no"><i class="fas fa-thumbs-down"></i> Sai / Không / Trái</a>
-    <a class="btn btn-success mt-3" href="/answer/{{question.id}}/yes"><i class="fas fa-thumbs-up"></i> Đúng / Có / Phải</a>
+    <a class="btn btn-danger mt-3" href="/api/answer/{{question.id}}/no" id="voteLeft"><i class="fas fa-thumbs-down"></i> Sai / Không / Trái</a>
+    <a class="btn btn-success mt-3" href="/api/answer/{{question.id}}/yes" id="voteRight"><i class="fas fa-thumbs-up"></i> Đúng / Có / Phải</a>
 </div>
 <div class="otherButton">
     <a class="btn btn-light" href="/question/{{question.id}}"  id="votebtn" >Kết quả vote</a>
