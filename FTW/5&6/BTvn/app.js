@@ -14,6 +14,7 @@ mongoose.connect('mongodb://localhost:27017/BTvn',{useNewUrlParser:true},functio
 
 
 app.use(express.static("public"))
+
 app.engine("handlebars",hbs({defaultLayout:"main"}))
 app.set('view engine',"handlebars");
 

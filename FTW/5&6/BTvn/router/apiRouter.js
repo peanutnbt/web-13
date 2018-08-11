@@ -7,7 +7,7 @@ router.use(bodyParser.urlencoded({extended:true}));
 //     console.log("Api router");
 //     next();
 // })
-router.post("/add",(req,res)=>{
+router.post("/add",(req,res)=>{ 
     let newQs={content:req.body.questionContent}
     
     //xu ly loi
@@ -15,7 +15,7 @@ router.post("/add",(req,res)=>{
         if(err) res.status(500).send({success:0,errMsg:err})
         else res.status(201).send({success:1,questionId:questionCreated._id})
     })
-    
+     
 })
 router.get("/answer/:questionId/:vote",(req,res)=>{
     QuestionModel.find({_id:req.params.questionId})

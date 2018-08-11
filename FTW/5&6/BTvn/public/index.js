@@ -37,7 +37,7 @@ $(document).ready(function(){
             $.ajax({
                 url:'/',
                 type:'POST',
-                success:function(body){
+                success:function(body){ 
                     if(body.success){
                         let question;
                         while(true){
